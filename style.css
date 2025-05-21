@@ -23,6 +23,11 @@ section {
   text-align: justify;
 }
 
+.x-small-text {
+  font-size: 0.75rem; /* equivalent to 12px if base is 16px */
+}
+
+
 h1 {
   font-size: 3em;
 }
