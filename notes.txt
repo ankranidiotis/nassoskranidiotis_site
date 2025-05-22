@@ -1,0 +1,8 @@
+DNS Table
+
+Τype	Host	Περιεχόμενα
+A	example.gr	185.199.108.153
+A	example.gr	185.199.109.153
+A	example.gr	185.199.110.153
+A	example.gr	185.199.111.153
+CNAME	www.example.gr	project_name.github.io
