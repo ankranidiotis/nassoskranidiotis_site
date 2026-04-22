@@ -13,6 +13,13 @@
   <!-- Author -->
   <meta name="author" content="Nassos Kranidiotis">
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nassoskranidiotis.com/">
+  <meta property="og:title" content="Nassos Kranidiotis – Official Website">
+  <meta property="og:description" content="Nassos Kranidiotis is an Information Technology Specialist with over 20 years of experience.">
+  <meta property="og:image" content="https://nassoskranidiotis.com/assets/founder.webp">
+
   <!-- Favicon -->
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
@@ -36,7 +43,7 @@
 <body>
 
   <!-- Video Background -->
-  <video class="video-background" autoplay muted loop playsinline poster="assets/video-poster.webp" preload="auto">
+  <video class="video-background" autoplay muted loop playsinline poster="assets/video-poster.webp" preload="none">
     <source src="assets/vb1.mp4" type="video/mp4" />
     Your browser does not support HTML5 video.
   </video>
@@ -86,7 +93,7 @@
   <section id="home" class="min-vh-100 py-5 d-flex align-items-center justify-content-center text-white">
     <div class="text-center">
       <img src="assets/companyname.png" alt="Soutas Logo" class="img-fluid" style="max-height: 80px;">
-      <p class="lead" style="color: #f8f9fac2; font-size: 16px;">55 years on planet Earth</p>
+      <p class="lead" style="color: #f8f9fac2; font-size: 16px;"><span id="age-years"></span> years on planet Earth</p>
     </div>
   </section>
 
@@ -153,8 +160,10 @@
         
         <!-- Left Column: XPERT APP -->
         <div class="col-md-6 mb-4" data-aos="fade-right">
-          <img src="assets/xpert.webp" alt="xpert app" class="img-fluid rounded shadow-sm mb-3" style="height: 200px; object-fit: contain;">
-          <p class="text-muted text-justify"><strong>XPERT APP</strong> is a modern web application designed to streamline and manage key commercial operations for small to mid-sized businesses. Built with Python and Streamlit, it provides an intuitive and responsive interface for handling essential business processes with minimal complexity.</p>
+          <div style="background-color: #464747; padding: 15px; border-radius: 0.375rem; margin-bottom: 15px;">
+            <img src="assets/xpert.webp" alt="xpert app" class="img-fluid rounded shadow-sm" style="height: 200px; object-fit: contain; display: block; margin: 0 auto;">
+          </div>
+          <p class="text-muted text-justify"><strong>xpert-app</strong> is a modern web application designed to streamline and manage key commercial operations for small to mid-sized businesses. Built with Python and Streamlit, it provides an intuitive and responsive interface for handling essential business processes with minimal complexity.</p>
           <p class="text-muted text-justify">Key features include:</p>
           <ul class="text-muted text-justify">
             <li><strong>Advanced Invoicing System:</strong> Manage invoices and track payments and balances in real time.</li>
@@ -163,7 +172,7 @@
             <li><strong>Statistics & Reporting:</strong> Visualize performance with dynamic dashboards.</li>
             <li><strong>Work-in-Progress:</strong> New features coming soon including multi-user support and reporting tools.</li>
           </ul>
-          <p class="text-muted text-justify">Licensed under the Apache License, <strong>XPERT APP</strong> is a customizable solution for business owners who value control over their workflows and data.</p>
+          <p class="text-muted text-justify">Licensed under the Apache License, <strong>xpert-app</strong> is a customizable solution for business owners who value control over their workflows and data.</p>
         </div>
 
         <!-- Right Column: Other Projects -->
@@ -277,11 +286,10 @@
         <!-- Photo albums -->
         <div class="col-sm-6 col-lg-4">
           <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/gallery.webp" class="card-img-top" alt="Moto Batteries">
+            <img src="assets/gallery.webp" class="card-img-top" alt="Photos & Videos">
             <div class="card-body text-center">
               <h5 class="card-title">Photos & Videos</h5>
               <p class="card-text text-muted">Browse my photos and videos on <a href="https://www.instagram.com/nassoskranidiotis/" target="_blank">Instagram</a> and <a href="https://www.tiktok.com/@nassoskranidiotis?_t=ZN-8wZBMXcbIBC&_r=1" target="_blank">TikTok</a>.</p>
-</p>
             </div>
           </div>
         </div>
@@ -292,7 +300,7 @@
             <img src="assets/blog.webp" class="card-img-top" alt="Blog & Social Media">
             <div class="card-body text-center">
               <h5 class="card-title">Blog & Social Media</h5>
-              <p class="card-text text-muted">Visit <a href="nassoskranidiotis.blogspot.com" target="_blank">my blog </a> to read my thoughts and find out remarkable things about my life. I've started blogging since 2007.</p>
+              <p class="card-text text-muted">Visit <a href="https://nassoskranidiotis.blogspot.com" target="_blank">my blog </a> to read my thoughts and find out remarkable things about my life. I've started blogging since 2007.</p>
             </div>
           </div>
         </div>
@@ -300,10 +308,10 @@
         <!-- Books & Cinema -->
         <div class="col-sm-6 col-lg-4">
           <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/books.webp" class="card-img-top" alt="Leisure Batteries">
+            <img src="assets/books.webp" class="card-img-top" alt="Books & Cinema">
             <div class="card-body text-center">
               <h5 class="card-title">Books & Cinema</h5>
-              <p class="card-text text-muted">Browse a list of my favorite books and movies.</p>
+              <p class="card-text text-muted">A curated selection of my favorite books and movies.</p>
             </div>
           </div>
         </div>
@@ -320,7 +328,7 @@
         <!-- Logo -->
         <div class="col-md-4 mb-3 mb-md-0 text-center text-md-start">
           <img src="assets/logotext.png" alt="Soutas Logo" height="40" class="mb-2">
-          <p class="small mb-0">&copy; 2025 NassosKranidiotis.com</p>
+          <p class="small mb-0">&copy; <span id="copyright-year"></span> NassosKranidiotis.com</p>
           <p class="small">Athens, Greece</p>
         </div>
 
@@ -364,12 +372,6 @@
 
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      once: true
-    });
-  </script>
 
   <!-- Custom JS -->
   <script src="script.js"></script>

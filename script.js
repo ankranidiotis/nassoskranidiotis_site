@@ -1,3 +1,7 @@
+const currentYear = new Date().getFullYear();
+document.getElementById('age-years').textContent = currentYear - 1970;
+document.getElementById('copyright-year').textContent = currentYear;
+
 // Show/hide back-to-top button
 const backToTopBtn = document.getElementById('backToTop');
 
