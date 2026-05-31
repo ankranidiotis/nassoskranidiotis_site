@@ -332,15 +332,18 @@ section {
 
 .featured-project-img {
   background: var(--surface-3);
-  padding: 2rem;
+  padding: 0;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .featured-project-img img {
-  max-height: 160px;
-  object-fit: contain;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .featured-project-body {
