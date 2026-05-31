@@ -6,11 +6,7 @@
   <title>Nassos Kranidiotis</title>
   <meta name="title" content="Nassos Kranidiotis – Official Website">
   <meta name="description" content="Nassos Kranidiotis is an Information Technology Specialist with over 20 years of experience.">
-
-  <!-- Keywords (optional but not critical today) -->
   <meta name="keywords" content="nassos, kranidiotis, IT, information, technology">
-
-  <!-- Author -->
   <meta name="author" content="Nassos Kranidiotis">
 
   <!-- Open Graph -->
@@ -20,45 +16,38 @@
   <meta property="og:description" content="Nassos Kranidiotis is an Information Technology Specialist with over 20 years of experience.">
   <meta property="og:image" content="https://nassoskranidiotis.com/assets/founder.webp">
 
-  <!-- Favicon -->
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
   <!-- Inter Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-
-  <!-- AOS (Animate On Scroll) CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
 
   <!-- Video Background -->
   <video class="video-background" autoplay muted loop playsinline poster="assets/video-poster.webp" preload="none">
     <source src="assets/vb1.mp4" type="video/mp4" />
-    Your browser does not support HTML5 video.
   </video>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow custom-navbar">
+  <!-- ─── Navbar ──────────────────────────────────────────────────────────── -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img src="assets/logotext.png" alt="Logo" height="40">
-        </a>      
-        <button
-        class="navbar-toggler"
+      <a class="navbar-brand" href="#">
+        <img src="assets/logotext.png" alt="Nassos Kranidiotis" height="36">
+      </a>
+      <button
+        class="navbar-toggler border-0"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -68,98 +57,245 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#profile">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#scienceart">Science & Art</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#followme">Follow me</a>
-          </li>
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#scienceart">Science & Art</a></li>
+          <li class="nav-item"><a class="nav-link" href="#followme">Follow Me</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
 
-  <!-- SPA Sections -->
-  <section id="home" class="min-vh-100 py-5 d-flex align-items-center justify-content-center text-white">
-    <div class="text-center">
-      <img src="assets/companyname.png" alt="Soutas Logo" class="img-fluid" style="max-height: 80px;">
-      <p class="lead" style="color: #f8f9fac2; font-size: 16px;"><span id="age-years"></span> years on planet Earth</p>
+  <!-- ─── Hero ────────────────────────────────────────────────────────────── -->
+  <section id="home">
+    <div class="hero-inner">
+      <img src="assets/companyname.png" alt="Soutas">
+      <p class="hero-tagline"><span id="age-years"></span> years on planet Earth</p>
+      <div class="hero-scroll-cue">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
     </div>
   </section>
 
 
-  <div class="bg-primary text-white text-center py-3" data-aos="fade-up">
-    <p class="mb-0 fw-semibold">
-      <i class="bi bi-bar-chart-line me-2"></i>Over 20 years of experience in computer science!
-    </p>
+  <!-- ─── Experience Banner ────────────────────────────────────────────────── -->
+  <div class="experience-banner" data-aos="fade-up">
+    <div class="container text-center">
+      <p class="mb-0 fw-semibold">
+        <i class="bi bi-bar-chart-line me-2 text-accent"></i>Over 20 years of experience in computer science
+      </p>
+    </div>
   </div>
 
 
-  <section id="profile" class="py-5" data-aos="fade-up">
+  <!-- ─── Profile ──────────────────────────────────────────────────────────── -->
+  <section id="profile" data-aos="fade-up">
     <div class="container">
-      <h2 class="mb-5 text-center">About Me</h2>
-      <div class="row align-items-center">
-        
-        <!-- Text Column -->
-        <div class="col-md-6">
-          <p>
-            My name is Nassos Kranidiotis. I am an IT specialist with over 20 years of experience. Below is a brief overview of my academic background:
-          </p>
-          <p>
-            <i class="bi bi-chevron-right text-primary me-1"></i><strong>M.Sc. in Information Systems</strong><br>
-            Thesis: <em>Effective Solution of the Sports Timetabling Problem Using Computational Intelligence Particle Swarm Optimization (PSO) Algorithms</em>
-            (<a href="https://apothesis.eap.gr/archive/item/210061?lang=el" target="_blank"><i class="bi bi-download"></i> download</a>)
-          </p>
-          <p>
-            <i class="bi bi-chevron-right text-primary me-1"></i><strong>B.Sc. in Physics</strong><br>
-            Thesis: <em>Gravity Darkening in Close Binary Stars of type W Ursae Majoris</em>
-            (<a href="https://drive.google.com/file/d/1tRwJwZRQTSoc6208-XiU7Q4Xy67HZ8xU/view" target="_blank"><i class="bi bi-download"></i> download</a>)
-          </p>
-          <p>
-            <i class="bi bi-chevron-right text-primary me-1"></i><strong>Publications</strong>
-            <a class="btn btn-sm btn-outline-primary ms-2" data-bs-toggle="collapse" href="#publicationsList" role="button" aria-expanded="false" aria-controls="publicationsList">Show / Hide</a>
-          </p>
-          <div class="collapse" id="publicationsList">
-            <ul class="mb-0">
-              <li><a href="https://www.researchgate.net/publication/252652573_Minimum_Times_and_Period_Behaviour_of_the_Neglected_Eclipsiong_Binary_WZ_Cygni" target="_blank">Rovithis, P., Rovithis-Livaniou, H., & Kranidiotis, A. (1996). Minimum Times and Period Behaviour of the Neglected Eclipsiong Binary WZ Cygni. <em>Information Bulletin on Variable Stars.</em></a></li>
-              <li><a href="https://www.researchgate.net/publication/253504396_Study_of_the_period_Changes_of_V505_Sagittarii_System" target="_blank">Rovithis-Livaniou, H., Rovithis, P., Kranidiotis, A., Athanasiades, G., & Kalimeris, A. (1996). Study of the Period Changes of V505 Sagittarii System.</a></li>
-              <li><a href="https://www.researchgate.net/publication/252838713_V_505_Sagittarii_A_quadrupole_system" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A. N., Rovithis, P., & Kalimeris, A. (1996). V 505 Sagittarii: A Quadruple System?</a></li>
-              <li><a href="https://www.researchgate.net/publication/253103901_On_the_Orbital_Period_Changes_of_EG_Cep" target="_blank">Rovithis-Livaniou, H., Rovithis, P., Kranidiotis, A., Chochol, D., & Pribulla, T. (1998). On the Orbital Period Changes of EG Cep.</a></li>
-              <li><a href="https://www.researchgate.net/publication/253572089_Photometric_study_of_the_eclipsing_binary_EG_CEP" target="_blank">Chochol, D., Pribulla, T., Rovithis-Livaniou, H., Rovithis, P., & Kranidiotis, A. (1998). Photometric Study of the Eclipsing Binary EG Cep. <em>Contributions of the Astronomical Observatory Skalnate Pleso.</em></a></li>
-              <li><a href="https://www.researchgate.net/publication/253295576_Examining_the_Orbital_Period_Changes_of_TX_Ursae_Majoris" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A., & Rovithis, P. (1998). Examining the Orbital Period Changes of TX Ursae Majoris.</a></li>
-              <li><a href="https://www.researchgate.net/publication/234353440_On_the_Orbital_Period_Changes_of_AK_Herculis" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A., Fragoulopoulou, E., Sergis, N., & Rovithis, P. (1999). On the Orbital Period Changes of AK Herculis. <em>Information Bulletin on Variable Stars,</em> 4713, 1.</a></li>
-              <li><a href="https://www.researchgate.net/publication/253922322_On_the_period_study_of_eclipsing_binaries_The_cases_of_AT_Peg_and_X_Tri" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A. N., & Rovithis, P. (1999). On the Period Study of Eclipsing Binaries: The Cases of AT Peg and X Tri.</a></li>
-              <li><a href="https://www.researchgate.net/publication/234196923_Study_of_the_period_changes_of_X_Trianguli" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A., Rovithis, P., & Athanassiades, G. (2000). Study of the Period Changes of X Trianguli. <em>Astronomy and Astrophysics,</em> 354, 904–908.</a></li>
-              <li><a href="https://www.researchgate.net/publication/226119755_Study_of_the_contact_binary_AK_Herculis_Light-curve_analysis_and_orbital_period_investigation" target="_blank">Rovithis-Livaniou, H., Fragoulopoulou, E., Sergis, N., Rovithis, P., & Kranidiotis, A. (2001). Study of the Contact Binary AK Herculis: Light-curve analysis and orbital period investigation. <em>Astrophysics and Space Science,</em> 275, 337–348. https://doi.org/10.1023/A:1002734605735</a></li>
-              <li><a href="https://www.researchgate.net/publication/234340786_Orbital_Period_Behaviour_of_Some_Semi-Detached_Eclipsing_Binaries_during_the_Last_Decades" target="_blank">Rovithis-Livaniou, H., Kalimeris, A., Kranidiotis, A., Athanassiades, G., & Rovithis, P. (2001). Orbital Period Behaviour of Some Semi-Detached Eclipsing Binaries during the Last Decades. <em>Publications of the Astronomical Society of Australia,</em> 229, 229.</a></li>
-            </ul>
+
+      <div class="text-center mb-2">
+        <h2 class="section-heading">About Me</h2>
+      </div>
+      <div class="section-divider"></div>
+
+      <div class="row align-items-start g-5">
+
+        <!-- Image -->
+        <div class="col-md-4 text-center" data-aos="fade-right">
+          <div class="profile-photo-wrap d-inline-block">
+            <img src="assets/founder.webp" alt="Nassos Kranidiotis" class="img-fluid">
           </div>
-          <p class="mt-3">
-            <i class="bi bi-chevron-right text-primary me-1"></i><strong>ORCID</strong><br>
-            <a href="https://orcid.org/0009-0001-8508-1414" target="_blank">
-              <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD" style="vertical-align:middle; margin-right:4px;">
-              https://orcid.org/0009-0001-8508-1414
+          <p class="mt-4 mb-0 fw-semibold" style="font-size:0.95rem;">Nassos Kranidiotis</p>
+          <p class="text-body-dim" style="font-size:0.8rem;">IT Specialist · Athens, Greece</p>
+        </div>
+
+        <!-- Content -->
+        <div class="col-md-8" data-aos="fade-left">
+          <p style="color:#b0b8c4; font-size:0.95rem; margin-bottom:1.75rem;">
+            My name is Nassos Kranidiotis. I am an IT specialist with over 20 years of experience across software development, system architecture, and academic research.
+          </p>
+
+          <!-- M.Sc. -->
+          <div class="credential-item">
+            <div class="credential-label">M.Sc.</div>
+            <div class="credential-title">Information Systems</div>
+            <div class="credential-subtitle">Thesis: Effective Solution of the Sports Timetabling Problem Using Computational Intelligence Particle Swarm Optimization (PSO) Algorithms</div>
+            <a class="credential-link" href="https://apothesis.eap.gr/archive/item/210061?lang=el" target="_blank">
+              <i class="bi bi-download"></i> Download thesis
             </a>
-          </p>
+          </div>
+
+          <!-- B.Sc. -->
+          <div class="credential-item">
+            <div class="credential-label">B.Sc.</div>
+            <div class="credential-title">Physics</div>
+            <div class="credential-subtitle">Thesis: Gravity Darkening in Close Binary Stars of type W Ursae Majoris</div>
+            <a class="credential-link" href="https://drive.google.com/file/d/1tRwJwZRQTSoc6208-XiU7Q4Xy67HZ8xU/view" target="_blank">
+              <i class="bi bi-download"></i> Download thesis
+            </a>
+          </div>
+
+          <!-- Publications -->
+          <div class="credential-item">
+            <div class="credential-label">Publications</div>
+            <div class="credential-title" style="margin-bottom:0.6rem;">Peer-reviewed journal & conference papers</div>
+            <a class="publications-toggle" data-bs-toggle="collapse" href="#publicationsList" role="button" aria-expanded="false" aria-controls="publicationsList">
+              <i class="bi bi-chevron-down"></i> Show / Hide
+            </a>
+            <div class="collapse" id="publicationsList">
+              <ul class="publications-list list-unstyled">
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/234340786_Orbital_Period_Behaviour_of_Some_Semi-Detached_Eclipsing_Binaries_during_the_Last_Decades" target="_blank">Rovithis-Livaniou, H., Kalimeris, A., Kranidiotis, A., Athanassiades, G., & Rovithis, P. (2001). Orbital Period Behaviour of Some Semi-Detached Eclipsing Binaries during the Last Decades. <em>Publications of the Astronomical Society of Australia,</em> 229.</a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/226119755_Study_of_the_contact_binary_AK_Herculis_Light-curve_analysis_and_orbital_period_investigation" target="_blank">Rovithis-Livaniou, H., Fragoulopoulou, E., Sergis, N., Rovithis, P., & Kranidiotis, A. (2001). Study of the Contact Binary AK Herculis: Light-curve analysis and orbital period investigation. <em>Astrophysics and Space Science,</em> 275, 337–348.</a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/234196923_Study_of_the_period_changes_of_X_Trianguli" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A., Rovithis, P., & Athanassiades, G. (2000). Study of the Period Changes of X Trianguli. <em>Astronomy and Astrophysics,</em> 354, 904–908.</a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/253922322_On_the_period_study_of_eclipsing_binaries_The_cases_of_AT_Peg_and_X_Tri" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A. N., & Rovithis, P. (1999). On the Period Study of Eclipsing Binaries: The Cases of AT Peg and X Tri.</a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/234353440_On_the_Orbital_Period_Changes_of_AK_Herculis" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A., Fragoulopoulou, E., Sergis, N., & Rovithis, P. (1999). On the Orbital Period Changes of AK Herculis. <em>Information Bulletin on Variable Stars,</em> 4713, 1.</a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/253295576_Examining_the_Orbital_Period_Changes_of_TX_Ursae_Majoris" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A., & Rovithis, P. (1998). Examining the Orbital Period Changes of TX Ursae Majoris.</a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/253572089_Photometric_study_of_the_eclipsing_binary_EG_CEP" target="_blank">Chochol, D., Pribulla, T., Rovithis-Livaniou, H., Rovithis, P., & Kranidiotis, A. (1998). Photometric Study of the Eclipsing Binary EG Cep. <em>Contributions of the Astronomical Observatory Skalnate Pleso.</em></a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/253103901_On_the_Orbital_Period_Changes_of_EG_Cep" target="_blank">Rovithis-Livaniou, H., Rovithis, P., Kranidiotis, A., Chochol, D., & Pribulla, T. (1998). On the Orbital Period Changes of EG Cep.</a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/252838713_V_505_Sagittarii_A_quadrupole_system" target="_blank">Rovithis-Livaniou, H., Kranidiotis, A. N., Rovithis, P., & Kalimeris, A. (1996). V 505 Sagittarii: A Quadruple System?</a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/253504396_Study_of_the_period_Changes_of_V505_Sagittarii_System" target="_blank">Rovithis-Livaniou, H., Rovithis, P., Kranidiotis, A., Athanasiades, G., & Kalimeris, A. (1996). Study of the Period Changes of V505 Sagittarii System.</a></li>
+                <li><i class="bi bi-dot text-accent"></i><a href="https://www.researchgate.net/publication/252652573_Minimum_Times_and_Period_Behaviour_of_the_Neglected_Eclipsiong_Binary_WZ_Cygni" target="_blank">Rovithis, P., Rovithis-Livaniou, H., & Kranidiotis, A. (1996). Minimum Times and Period Behaviour of the Neglected Eclipsing Binary WZ Cygni. <em>Information Bulletin on Variable Stars.</em></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ORCID -->
+          <a class="orcid-badge" href="https://orcid.org/0009-0001-8508-1414" target="_blank">
+            <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID">
+            <span>orcid.org/0009-0001-8508-1414</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── Projects ─────────────────────────────────────────────────────────── -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="text-center mb-2" data-aos="fade-up">
+        <h2 class="section-heading">Projects</h2>
+      </div>
+      <div class="section-divider" data-aos="fade-up"></div>
+
+      <div class="row gx-4 gy-4">
+
+        <!-- Featured: xpert-app -->
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="featured-project-card h-100">
+            <div class="featured-project-img">
+              <img src="assets/xpert.webp" alt="xpert app">
+            </div>
+            <div class="featured-project-body">
+              <span class="project-tag">Featured</span>
+              <h5 style="font-size:1.1rem; font-weight:700; color:#e8eaed; margin-bottom:0.6rem;">xpert-app</h5>
+              <p style="font-size:0.85rem; color:#8b929e; line-height:1.65; margin-bottom:1rem;">
+                A modern web application designed to streamline and manage key commercial operations for small to mid-sized businesses. Built with Python and Streamlit, it provides an intuitive, responsive interface for essential business workflows.
+              </p>
+              <ul style="font-size:0.82rem; color:#8b929e; line-height:1.7; padding-left:1.1rem; margin-bottom:1rem;">
+                <li><strong style="color:#c9d1d9;">Advanced Invoicing</strong> — manage invoices, track payments and balances in real time</li>
+                <li><strong style="color:#c9d1d9;">Sales & Purchases</strong> — log and analyze daily commercial activity</li>
+                <li><strong style="color:#c9d1d9;">Financial Overview</strong> — monitor income, expenses, and profit margins</li>
+                <li><strong style="color:#c9d1d9;">Statistics & Reporting</strong> — visualize performance with dynamic dashboards</li>
+              </ul>
+              <div class="project-card-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Streamlit</span>
+                <span class="tech-badge">Apache License</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Image Column -->
-        <div class="col-md-4 offset-md-1 text-center">
-          <img src="assets/founder.webp" alt="Nassos Kranidiotis Profile Photo" class="img-fluid rounded shadow">
-          <p class="small mt-3">Nassos Kranidiotis</p>
+        <!-- Other projects grid -->
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="row g-3 h-100">
+
+            <div class="col-12">
+              <div class="project-card">
+                <div class="project-card-title">
+                  <a href="https://github.com/ankranidiotis/cppso" target="_blank">
+                    CP-PSO <i class="bi bi-github" style="font-size:0.8rem;"></i>
+                  </a>
+                </div>
+                <p class="project-card-desc">Python implementation of the Particle Swarm Optimization (PSO) algorithm with Constraint Programming, applied to the Sports Timetabling Problem as part of my M.Sc. thesis research.</p>
+                <div class="project-card-tech">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">PSO</span>
+                  <span class="tech-badge">Optimization</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="project-card">
+                <div class="project-card-title">SOUTAS APP</div>
+                <p class="project-card-desc">ASP.NET C# web application for managing business operations, customer records, and commercial workflows.</p>
+                <div class="project-card-tech">
+                  <span class="tech-badge">ASP.NET</span>
+                  <span class="tech-badge">C#</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="project-card">
+                <div class="project-card-title">ALPHA SUITE</div>
+                <p class="project-card-desc">WPF desktop application offering an integrated suite of tools for inventory, sales, and business administration.</p>
+                <div class="project-card-tech">
+                  <span class="tech-badge">WPF</span>
+                  <span class="tech-badge">C#</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="project-card">
+                <div class="project-card-title">NKM MANAGEMENT</div>
+                <p class="project-card-desc">WPF desktop application for comprehensive business management, covering contacts, tasks, and operational records.</p>
+                <div class="project-card-tech">
+                  <span class="tech-badge">WPF</span>
+                  <span class="tech-badge">C#</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="project-card">
+                <div class="project-card-title">
+                  <a href="https://github.com/ankranidiotis/magnet2rd" target="_blank">
+                    MAGNET2RD <i class="bi bi-github" style="font-size:0.8rem;"></i>
+                  </a>
+                </div>
+                <p class="project-card-desc">Lightweight Python CLI tool that converts Torrent Magnet Links into high-speed direct download links via the Real Debrid API.</p>
+                <div class="project-card-tech">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">CLI</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="project-card">
+                <div class="project-card-title">
+                  <a href="https://github.com/ankranidiotis/glycemic-index" target="_blank">
+                    GLYCEMIC INDEX <i class="bi bi-github" style="font-size:0.8rem;"></i>
+                  </a>
+                </div>
+                <p class="project-card-desc">App for looking up and displaying the glycemic index of foods.</p>
+                <div class="project-card-tech">
+                  <span class="tech-badge">Python</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
@@ -167,185 +303,110 @@
   </section>
 
 
-  <section id="projects" class="py-5 bg-light">
+  <!-- ─── Science & Art ─────────────────────────────────────────────────────── -->
+  <section id="scienceart">
     <div class="container">
-      <h2 class="mb-5 text-center">Projects</h2>
-      <div class="row gx-5">
-        
-        <!-- Left Column: XPERT APP -->
-        <div class="col-md-6 mb-4" data-aos="fade-right">
-          <div style="background-color: #464747; padding: 15px; border-radius: 0.375rem; margin-bottom: 15px;">
-            <img src="assets/xpert.webp" alt="xpert app" class="img-fluid rounded shadow-sm" style="height: 200px; object-fit: contain; display: block; margin: 0 auto;">
-          </div>
-          <p class="text-muted text-justify"><strong>xpert-app</strong> is a modern web application designed to streamline and manage key commercial operations for small to mid-sized businesses. Built with Python and Streamlit, it provides an intuitive and responsive interface for handling essential business processes with minimal complexity.</p>
-          <p class="text-muted text-justify">Key features include:</p>
-          <ul class="text-muted text-justify">
-            <li><strong>Advanced Invoicing System:</strong> Manage invoices and track payments and balances in real time.</li>
-            <li><strong>Sales & Purchases Tracking:</strong> Log and analyze daily commercial activity.</li>
-            <li><strong>Financial Overview:</strong> Monitor income, expenses, and profit margins.</li>
-            <li><strong>Statistics & Reporting:</strong> Visualize performance with dynamic dashboards.</li>
-            <li><strong>Coming Soon:</strong> New features including multi-user support and reporting tools.</li>
-          </ul>
-          <p class="text-muted text-justify">Licensed under the Apache License, <strong>xpert-app</strong> is a customizable solution for business owners who value control over their workflows and data.</p>
-        </div>
 
-        <!-- Right Column: Other Projects -->
-        <div class="col-md-6 mb-4" data-aos="fade-left">
-          <div class="row g-3">
-
-            <div class="col-12">
-              <div class="p-3 border rounded shadow-sm h-100 bg-primary text-white">
-                <h6><strong><a href="https://github.com/ankranidiotis/cppso" target="_blank" class="text-white">CP-PSO <i class="bi bi-github"></i></a></strong></h6>
-                <p class="mb-0 x-small-text">Python implementation of the Particle Swarm Optimization (PSO) algorithm with Constraint Programming, applied to the Sports Timetabling Problem as part of my M.Sc. thesis research.</p>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="p-3 border rounded shadow-sm h-100 bg-danger text-white">
-                <h6><strong>SOUTAS APP</strong></h6>
-                <p class="mb-0 x-small-text">ASP.NET C# web application for managing business operations, customer records, and commercial workflows.</p>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="p-3 border rounded shadow-sm h-100 bg-secondary text-white">
-                <h6><strong>ALPHA SUITE</strong></h6>
-                <p class="mb-0 x-small-text">WPF desktop application offering an integrated suite of tools for inventory, sales, and business administration.</p>
-              </div>
-            </div>
-
-
-            <div class="col-12">
-              <div class="p-3 border rounded shadow-sm h-100 bg-warning">
-                <h6><strong>NKM MANAGEMENT SOLUTION</strong></h6>
-                <p class="mb-0 x-small-text">WPF desktop application for comprehensive business management, covering contacts, tasks, and operational records.</p>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="p-3 border rounded shadow-sm h-100 bg-success text-white">
-                <h6><strong><a href="https://github.com/ankranidiotis/magnet2rd" target="_blank" class="text-white">MAGNET2RD <i class="bi bi-github"></i></a></strong></h6>
-                <p class="mb-0 x-small-text">A lightweight Python command-line tool that automatically converts Torrent Magnet Links into high-speed, direct download links using the Real Debrid API.</p>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="p-3 border rounded shadow-sm h-100 bg-info text-white">
-                <h6><strong><a href="https://github.com/ankranidiotis/glycemic-index" target="_blank" class="text-white">GLYCEMIC INDEX APP <i class="bi bi-github"></i></a></strong></h6>
-                <p class="mb-0 x-small-text">App for looking up and displaying the glycemic index of foods.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
+      <div class="text-center mb-2" data-aos="fade-up">
+        <h2 class="section-heading text-white">Science & Art</h2>
       </div>
-    </div>
-  </section>
+      <div class="section-divider" data-aos="fade-up"></div>
 
-
-  <section id="scienceart" class="py-5">
-    <div class="container">
-      <h2 class="mb-5 text-center text-white">Science & Art</h2>
       <div class="row g-4 justify-content-center">
 
-        <!-- Information Technology -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/it.webp" class="card-img-top" alt="Information Technology" loading="lazy">
-            <div class="card-body text-center">
-              <h5 class="card-title">Information Technology</h5>
-              <p class="card-text text-muted">Find special topics on Information Technology from my Master's Degree studies
-              <a href="https://nassoskranidiotis.wordpress.com/" target="_blank">here</a>.</p>
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="sa-card">
+            <img src="assets/it.webp" alt="Information Technology" loading="lazy">
+            <div class="sa-card-body">
+              <h5>Information Technology</h5>
+              <p>Special topics on Information Technology from my Master's Degree studies —
+                <a href="https://nassoskranidiotis.wordpress.com/" target="_blank">read here</a>.
+              </p>
             </div>
           </div>
         </div>
 
-        <!-- Video Tutorials -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/tutorials.webp" class="card-img-top" alt="Video Tutorials" loading="lazy">
-            <div class="card-body text-center">
-              <h5 class="card-title">Video Tutorials</h5>
-              <p class="card-text text-muted">YouTube video tutorials on Information Technology. Special topics for courses
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="sa-card">
+            <img src="assets/tutorials.webp" alt="Video Tutorials" loading="lazy">
+            <div class="sa-card-body">
+              <h5>Video Tutorials</h5>
+              <p>YouTube tutorials for courses
                 <a href="https://youtube.com/playlist?list=PL0Kl6vakfvTL7WqPc1Wq1kWD1Fu5UCZb7&si=7yiNbhHckbudFWw6" target="_blank">PLS50</a>,
                 <a href="https://www.youtube.com/watch?v=YA_deVryBoE&list=PL0Kl6vakfvTLrh9_grseoJ7BYYanuTsLP&pp=gAQB" target="_blank">PLS51</a>,
-                <a href="https://www.youtube.com/watch?v=iGihwvpxHBs&list=PL0Kl6vakfvTJI6WfrYkOlvSVhF6ivEmKp"
-                target="_blank">PLS60</a>,
-                <a href="https://www.youtube.com/watch?v=CX1cSwcxP48&list=PL0Kl6vakfvTKpCOl8MBKS5jd3r-b2OPZf"
-                target="_blank">PLS62</a> for the academic program, Master in Information Technology, by the Hellenic Open University. Subscribe to my channel <a href="https://www.youtube.com/channel/UCPNZzTP5jEcfP46QwQMCoAQ">here</a>.
+                <a href="https://www.youtube.com/watch?v=iGihwvpxHBs&list=PL0Kl6vakfvTJI6WfrYkOlvSVhF6ivEmKp" target="_blank">PLS60</a>,
+                <a href="https://www.youtube.com/watch?v=CX1cSwcxP48&list=PL0Kl6vakfvTKpCOl8MBKS5jd3r-b2OPZf" target="_blank">PLS62</a>
+                — Hellenic Open University M.Sc. in IT.
+                <a href="https://www.youtube.com/channel/UCPNZzTP5jEcfP46QwQMCoAQ" target="_blank">Subscribe</a>.
               </p>
             </div>
           </div>
         </div>
 
-        <!-- Poetry -->
-        <div class="col-sm-6 col-lg-4">
-          <div class="card h-100 shadow-sm" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/poetry.webp" class="card-img-top" alt="Poetry" loading="lazy">
-            <div class="card-body text-center">
-              <h5 class="card-title">Poetry</h5>
-              <p class="card-text text-muted">My thoughts and poems, written since 1993, are published on <i>Moments In Time</i>. Visit it <a href="https://nassoskranidiotis.home.blog/" target="_blank">here</a>.
+        <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="sa-card">
+            <img src="assets/poetry.webp" alt="Poetry" loading="lazy">
+            <div class="sa-card-body">
+              <h5>Poetry</h5>
+              <p>My thoughts and poems, written since 1993, published on <em>Moments In Time</em> —
+                <a href="https://nassoskranidiotis.home.blog/" target="_blank">visit here</a>.
               </p>
             </div>
           </div>
         </div>
-
 
       </div>
     </div>
   </section>
 
 
-  <footer class="bg-dark text-light py-4" id="followme">
-    <div class="container text-center text-md-start">
-      <div class="row align-items-center">
+  <!-- ─── Footer ───────────────────────────────────────────────────────────── -->
+  <footer id="followme">
+    <div class="container">
+      <div class="row align-items-start g-4">
 
-        <!-- Logo -->
-        <div class="col-md-4 mb-3 mb-md-0 text-center text-md-start">
-          <img src="assets/logotext.png" alt="Soutas Logo" height="40" class="mb-2">
-          <p class="small mb-0">&copy; <span id="copyright-year"></span> NassosKranidiotis.com</p>
-          <p class="small">Athens, Greece</p>
+        <!-- Logo & Copyright -->
+        <div class="col-md-4 footer-logo">
+          <img src="assets/logotext.png" alt="Nassos Kranidiotis" height="36" class="mb-3">
+          <p class="footer-copyright">&copy; <span id="copyright-year"></span> NassosKranidiotis.com<br>Athens, Greece</p>
         </div>
 
         <!-- Quick Links -->
-        <div class="col-md-4 mb-3 mb-md-0 text-center">
-          <h6 class="text-uppercase fw-bold">Quick Links</h6>
-          <ul class="list-unstyled small">
-            <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
-            <li><a href="#profile" class="text-light text-decoration-none">Profile</a></li>
-            <li><a href="#projects" class="text-light text-decoration-none">Projects</a></li>
-            <li><a href="#scienceart" class="text-light text-decoration-none">Science & Art</a></li>
-            <li><a href="#followme" class="text-light text-decoration-none">Follow Me</a></li>
+        <div class="col-md-4 footer-links text-center">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#scienceart">Science & Art</a></li>
+            <li><a href="#followme">Follow Me</a></li>
           </ul>
         </div>
 
-        <!-- Social Media -->
-        <div class="col-md-4 text-center text-md-end">
-          <h6 class="text-uppercase fw-bold">Follow me</h6>
-          <a href="https://www.facebook.com/nassos.kranidiotis/" class="text-light me-3 fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://gr.linkedin.com/in/nassos-kranidiotis-331038157" class="text-light me-3 fs-5" aria-label="Linkedin"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.instagram.com/nassoskranidiotis/" class="text-light me-3 fs-5" aria-label="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.tiktok.com/@nassoskranidiotis?_t=ZN-8wZBMXcbIBC&_r=1" class="text-light me-3 fs-5" aria-label="tiktok"><i class="bi bi-tiktok"></i></a>
-          <a href="mailto:info@nassoskranidiotis.com" class="text-light fs-5"><i class="bi bi-envelope-fill"></i></a>
-          <p class="small mt-3 mb-0">
-                    Developed by <a href="https://nassoskranidiotis.com" class="text-light text-decoration-underline" target="_blank">Nassos Kranidiotis</a>
-          </p>          
+        <!-- Social -->
+        <div class="col-md-4 footer-social text-center text-md-end">
+          <h6>Follow Me</h6>
+          <div class="social-icons justify-content-center justify-content-md-end">
+            <a href="https://www.facebook.com/nassos.kranidiotis/" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://gr.linkedin.com/in/nassos-kranidiotis-331038157" class="social-icon-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/nassoskranidiotis/" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.tiktok.com/@nassoskranidiotis?_t=ZN-8wZBMXcbIBC&_r=1" class="social-icon-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="mailto:info@nassoskranidiotis.com" class="social-icon-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+          <p class="footer-byline">Developed by <a href="https://nassoskranidiotis.com" target="_blank">Nassos Kranidiotis</a></p>
         </div>
 
       </div>
     </div>
   </footer>
 
-  <button id="backToTop" class="btn btn-dark position-fixed" style="bottom: 20px; right: 20px; display: none; z-index: 999;">
-  <i class="bi bi-arrow-up"></i>
+  <!-- Back to Top -->
+  <button id="backToTop" class="position-fixed d-flex" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
   </button>
 
-
-  <!-- Bootstrap JS (for navbar toggle) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
